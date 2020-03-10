@@ -1,5 +1,5 @@
 # Project type : 
-Self assigned passion project 
+Self assigned passion project | Very good practice of localStorage and events
 # Skills tested : 
 javaScript / localStorage
 # Time taken : 
