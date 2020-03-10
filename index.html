@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Task list</title>
+    <style>
+        .fa-times-circle {
+            color: #CB2F31;
+        }
+        
+        ul {
+            padding-left: 0px;
+        }
+        
+        li {
+            border: 1px solid #ddd;
+            animation-name: addli;
+            animation-duration: 1s;
+            margin: 10px 0px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 1px #ddd;
+        }
+        
+        @keyframes addli {
+            from {
+                transform: none;
+            }
+            to {
+                transform: rotateX(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="row flex-container">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 flex-item">
+                <div class="card">
+                    <div class="card-body firstCardBody">
+                        <form action="javascript:void(0)" method="GET">
+                            <div class="row">
+                                <div class="col-md-12 emptyError"></div>
+                            </div>
+                            <!--row closes-->
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <input type="text" id="taskInput" class="form-control" placeholder="Enter task " autocomplete="off">
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info btn-block"> <i class="fas fa-plus-circle"></i> &nbsp;<b>Task</b></button>
+                                </div>
+                            </div>
+                            <!--row closes-->
+                        </form>
+                    </div>
+                </div><br>
+                <!--card closes-->
+                <div class="card cardSelect">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="filterTask" placeholder="Filter tasks" class="form-control">
+                        </div>
+                        <ul class="ul-class" type=none>
+                            <!-- <li class="card-body li-class">Going to mall
+                                <a href="javascript:void(0)"><i class="fas close fa-times-circle"></i></a>
+                            </li>
+                            <li class="card-body li-class">Texting vikash
+                                <a href="javascript:void(0)"><i class="fas close fa-times-circle"></i></a>
+                            </li>
+                            <li class="card-body li-class">Having pizza
+                                <a href="javascript:void(0)"><i class="fas close fa-times-circle"></i></a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-block btn btn-warning"><b>Clear all tasks</b></button>
+                    </div>
+                </div>
+                <!--card closes-->
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <!--row closes-->
+    </div>
+
+    <script src="https://kit.fontawesome.com/ae9d1f066e.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
