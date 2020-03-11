@@ -1,4 +1,4 @@
-# Project type : 
+# Project description : 
 Self assigned passion project | Very good practice of localStorage and events
 # Skills tested : 
 javaScript / localStorage
